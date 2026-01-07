@@ -26,7 +26,7 @@ def test_bigquery_connection():
         print("Testing connection with a small query...")
         df = client.query(test_query).to_dataframe()
 
-        print(f"✅ Success! Retrieved {len(df)} rows")
+        print(f" Success! Retrieved {len(df)} rows")
         print(f"Columns: {list(df.columns)}")
         print("\nSample data:")
         print(df.head())
@@ -34,7 +34,7 @@ def test_bigquery_connection():
         return True
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
         print("\nTroubleshooting tips:")
         print(
             "1. Make sure you're authenticated: gcloud auth application-default login"
