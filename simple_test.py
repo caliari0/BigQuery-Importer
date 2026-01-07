@@ -26,7 +26,7 @@ def simple_bigquery_test():
         print("Executing query...")
         df = client.query(query).to_dataframe()
         
-        print(f"✅ Success! Retrieved {len(df)} rows")
+        print(f" Success! Retrieved {len(df)} rows")
         print(f"Columns: {list(df.columns)}")
         print("\nData:")
         print(df)
@@ -34,7 +34,7 @@ def simple_bigquery_test():
         return True
         
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
         print(f"Error type: {type(e).__name__}")
         return False
 
